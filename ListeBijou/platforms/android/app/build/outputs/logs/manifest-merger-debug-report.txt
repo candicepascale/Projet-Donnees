@@ -1,0 +1,261 @@
+-- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:12:9-14:20
+	android:grantUriPermissions
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:12:106-140
+	android:authorities
+		INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:12:19-80
+	android:exported
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:12:81-105
+	android:name
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:12:141-190
+manifest
+ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [:CordovaLib] /home/candice/cordova_project/ListeBijou/platforms/android/CordovaLib/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:20:1-27:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/1682c718cdcfa600f05e744764dd92d6/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/7c06bb0cb64e7991cc0438804131b72d/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-splashscreen:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/907389a4ee75eccfa12009b57926a010/transformed/jetified-core-splashscreen-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /home/candice/.gradle/caches/9.0-milestone-1/transforms/da9e129562ee2b6556777912e3f2adee/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.6.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/b7864c2f8630203ed308a5982f054605/transformed/jetified-activity-1.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/9bad5138624af03212ebef9169fe0333/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/1115b280058ddefc19a545e1a38f8b2a/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/fb1daedf5433d4dfde2cb04c9c5d977c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.webkit:webkit:1.6.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/99f6d0e0200cce75614d261eb5773890/transformed/webkit-1.6.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/d881b06eb41935510c01e0f08089258e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/8fa9022a1dd9ffa52099a09892be508f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/2ade415c6b304d7a4ffcf4fb9fd8fd7f/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/089b4105454e0e5fbdc14e3982d85777/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/bc7c0de651c4b3c8294f3bc934d561b7/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/6678b1f12af99cd504d98b48ff3bd54e/transformed/jetified-core-ktx-1.9.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/76d703298b002ae7494ccc27a8858fab/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/a551506a6f96c48eea84d57c21ae67da/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/23b0bbcafb586108525e367a819c06e0/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/539a4ea4a22f28b114da0e0e7963477f/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/6b3ead99f7e2d4ec67e637e1aa21c449/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/a2a448101b5c4fdf5c45527984f4b311/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/ee7fd8f8fc67942e9eb445b288f838e5/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/314e724c30cfb6e21abae91947eb9b9b/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/23717f6d253516785aaceb600e179da5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/979447eb3155a06220834f404fee4211/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/dab0ccf0e2328768b61a5ade61925f24/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/38e8413d82c2e715af25ba9ca184bef0/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/628f15f4bf7e9747ca901d544258e65d/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/9abcbf523b3cd25429e9b4a5adde7fab/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:2:74-101
+		INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml
+	android:hardwareAccelerated
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:2:11-45
+	xmlns:android
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:2:102-160
+	android:versionCode
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:2:46-73
+		INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml
+supports-screens
+ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:3:5-191
+	android:largeScreens
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:3:49-76
+	android:smallScreens
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:3:132-159
+	android:normalScreens
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:3:77-105
+	android:xlargeScreens
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:3:160-188
+	android:resizeable
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:3:106-131
+	android:anyDensity
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:3:23-48
+uses-permission#android.permission.INTERNET
+ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:5:5-15:19
+INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:5:5-15:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/fb1daedf5433d4dfde2cb04c9c5d977c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/fb1daedf5433d4dfde2cb04c9c5d977c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/539a4ea4a22f28b114da0e0e7963477f/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/539a4ea4a22f28b114da0e0e7963477f/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/ee7fd8f8fc67942e9eb445b288f838e5/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/ee7fd8f8fc67942e9eb445b288f838e5/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/23717f6d253516785aaceb600e179da5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/23717f6d253516785aaceb600e179da5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:5:121-147
+	android:label
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:5:88-120
+	android:hardwareAccelerated
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:5:18-52
+	android:icon
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:5:53-87
+activity#ca.qc.cgmatane.mobile.listebijou.MainActivity
+ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:6:9-11:20
+	android:label
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:6:160-197
+	android:launchMode
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:6:198-228
+	android:windowSoftInputMode
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:6:303-345
+	android:exported
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:6:136-159
+	android:configChanges
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:6:19-135
+	android:theme
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:6:257-302
+	android:name
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:6:229-256
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:7:13-10:29
+	android:label
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:7:28-65
+action#android.intent.action.MAIN
+ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:8:17-69
+	android:name
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:8:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:9:17-77
+	android:name
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
+queries
+ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:16:5-20:15
+intent#action:name:android.media.action.IMAGE_CAPTURE
+ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:17:9-19:18
+action#android.media.action.IMAGE_CAPTURE
+ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:18:13-73
+	android:name
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:18:21-70
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:13:13-130
+	android:resource
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:13:75-127
+	android:name
+		ADDED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml:13:24-74
+uses-sdk
+INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml
+MERGED from [:CordovaLib] /home/candice/cordova_project/ListeBijou/platforms/android/CordovaLib/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] /home/candice/cordova_project/ListeBijou/platforms/android/CordovaLib/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:25:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/1682c718cdcfa600f05e744764dd92d6/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/1682c718cdcfa600f05e744764dd92d6/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/7c06bb0cb64e7991cc0438804131b72d/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/7c06bb0cb64e7991cc0438804131b72d/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-splashscreen:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/907389a4ee75eccfa12009b57926a010/transformed/jetified-core-splashscreen-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-splashscreen:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/907389a4ee75eccfa12009b57926a010/transformed/jetified-core-splashscreen-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /home/candice/.gradle/caches/9.0-milestone-1/transforms/da9e129562ee2b6556777912e3f2adee/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /home/candice/.gradle/caches/9.0-milestone-1/transforms/da9e129562ee2b6556777912e3f2adee/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.6.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/b7864c2f8630203ed308a5982f054605/transformed/jetified-activity-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/b7864c2f8630203ed308a5982f054605/transformed/jetified-activity-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/9bad5138624af03212ebef9169fe0333/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/9bad5138624af03212ebef9169fe0333/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/1115b280058ddefc19a545e1a38f8b2a/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/1115b280058ddefc19a545e1a38f8b2a/transformed/jetified-emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/fb1daedf5433d4dfde2cb04c9c5d977c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/fb1daedf5433d4dfde2cb04c9c5d977c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.webkit:webkit:1.6.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/99f6d0e0200cce75614d261eb5773890/transformed/webkit-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.6.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/99f6d0e0200cce75614d261eb5773890/transformed/webkit-1.6.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/d881b06eb41935510c01e0f08089258e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/d881b06eb41935510c01e0f08089258e/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/8fa9022a1dd9ffa52099a09892be508f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/8fa9022a1dd9ffa52099a09892be508f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/2ade415c6b304d7a4ffcf4fb9fd8fd7f/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/2ade415c6b304d7a4ffcf4fb9fd8fd7f/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/089b4105454e0e5fbdc14e3982d85777/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/089b4105454e0e5fbdc14e3982d85777/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/bc7c0de651c4b3c8294f3bc934d561b7/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/bc7c0de651c4b3c8294f3bc934d561b7/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/6678b1f12af99cd504d98b48ff3bd54e/transformed/jetified-core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/6678b1f12af99cd504d98b48ff3bd54e/transformed/jetified-core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/76d703298b002ae7494ccc27a8858fab/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/76d703298b002ae7494ccc27a8858fab/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/a551506a6f96c48eea84d57c21ae67da/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/a551506a6f96c48eea84d57c21ae67da/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/23b0bbcafb586108525e367a819c06e0/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/23b0bbcafb586108525e367a819c06e0/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/539a4ea4a22f28b114da0e0e7963477f/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/539a4ea4a22f28b114da0e0e7963477f/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/6b3ead99f7e2d4ec67e637e1aa21c449/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/6b3ead99f7e2d4ec67e637e1aa21c449/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/a2a448101b5c4fdf5c45527984f4b311/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/a2a448101b5c4fdf5c45527984f4b311/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/ee7fd8f8fc67942e9eb445b288f838e5/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/ee7fd8f8fc67942e9eb445b288f838e5/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/314e724c30cfb6e21abae91947eb9b9b/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/314e724c30cfb6e21abae91947eb9b9b/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/23717f6d253516785aaceb600e179da5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/23717f6d253516785aaceb600e179da5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/979447eb3155a06220834f404fee4211/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/979447eb3155a06220834f404fee4211/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/dab0ccf0e2328768b61a5ade61925f24/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/dab0ccf0e2328768b61a5ade61925f24/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/38e8413d82c2e715af25ba9ca184bef0/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/38e8413d82c2e715af25ba9ca184bef0/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/628f15f4bf7e9747ca901d544258e65d/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/628f15f4bf7e9747ca901d544258e65d/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/9abcbf523b3cd25429e9b4a5adde7fab/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/9abcbf523b3cd25429e9b4a5adde7fab/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/candice/cordova_project/ListeBijou/platforms/android/app/src/main/AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/fb1daedf5433d4dfde2cb04c9c5d977c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/539a4ea4a22f28b114da0e0e7963477f/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/539a4ea4a22f28b114da0e0e7963477f/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/ee7fd8f8fc67942e9eb445b288f838e5/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/ee7fd8f8fc67942e9eb445b288f838e5/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/fb1daedf5433d4dfde2cb04c9c5d977c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/fb1daedf5433d4dfde2cb04c9c5d977c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/fb1daedf5433d4dfde2cb04c9c5d977c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/fb1daedf5433d4dfde2cb04c9c5d977c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/fb1daedf5433d4dfde2cb04c9c5d977c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/fb1daedf5433d4dfde2cb04c9c5d977c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/fb1daedf5433d4dfde2cb04c9c5d977c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+permission#ca.qc.cgmatane.mobile.listebijou.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+uses-permission#ca.qc.cgmatane.mobile.listebijou.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] /home/candice/.gradle/caches/9.0-milestone-1/transforms/822c4a9bd3f0bf4a8d14927468700ce6/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/539a4ea4a22f28b114da0e0e7963477f/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/539a4ea4a22f28b114da0e0e7963477f/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /home/candice/.gradle/caches/9.0-milestone-1/transforms/539a4ea4a22f28b114da0e0e7963477f/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78

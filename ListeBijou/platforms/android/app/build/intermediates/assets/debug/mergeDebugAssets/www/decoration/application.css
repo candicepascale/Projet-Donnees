@@ -1,0 +1,210 @@
+﻿@import "normalize.css";
+
+/* 🌟 Définition des polices */
+@font-face {
+  font-family: 'The Perfect Christmas';
+  src: url('font/the_perfect_christmas/The Perfect Christmas.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Waving at Christmas';
+  src: url('font/waving_at_christmas/Waving at Christmas.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Cream Cake';
+  src: url('font/cream_cake/Cream Cake.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Hello Christmas Icon';
+  src: url('font/hello_christmas_icons/Hello-Christmas-Icon-trial.ttf')  format('truetype');
+}
+
+/* 🌟 Palette de couleurs */
+:root {
+  --or: #e5c100;
+  --or-clair: #f4d03f;
+  --rose-pale: #fcd6ec;
+  --rose-fonce: #d63384;
+  --rose-gradient: linear-gradient(to right, #fae6c8, #fcd6ec);
+  --noir: #1a1a1a;
+  --transparent: rgba(0,0,0,0);
+  --ombre: rgba(212, 175, 55, 0.4);
+  --bordure-ronde: 1rem;
+}
+
+html {
+  font-family:'Cream Cake', sans-serif;
+  font-size:48px;
+}
+
+/* 🛍️ Liste des bijoux */
+#liste-bijou {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 0 auto;        /* centre horizontalement le conteneur */
+  justify-content: center; /* centre les items à l'intérieur */
+}
+
+
+.liste-bijou-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  padding: 0.5rem;
+  background: var(--rose-gradient);
+  border-radius: var(--bordure-ronde);
+  box-shadow: 2px 2px var(--ombre);
+  gap: 0.5rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.liste-bijou-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 4px var(--ombre);
+}
+
+.liste-bijou-item .icone {
+  font-family: 'Hello Christmas Icon', sans-serif;
+  font-size: 1.5rem;
+  color: var(--or);
+  margin-bottom: 0.25rem;
+}
+
+.liste-bijou-item .bijou-nom {
+  font-size: 1.2rem;
+  color: var(--rose-fonce);
+  font-weight: bold;
+}
+
+.liste-bijou-item .action {
+  width: 40%;             /* réduit la largeur du bouton */
+  font-size: 0.5rem;      /* réduit légèrement le texte */
+  margin-top: 0.25rem;
+  background-color: var(--or);
+  color: var(--noir);
+  text-decoration: none;
+  border-radius: var(--bordure-ronde);
+  font-family: 'Waving at Christmas', sans-serif;
+  padding: 0.25rem;
+  box-shadow: 1px 1px var(--ombre);
+}
+
+
+#liste-bijou li {
+  position: relative;
+  padding-left: 2rem;
+}
+#liste-bijou li::before {
+  font-family: 'Hello Christmas Icon', sans-serif;
+  font-size: 1.5rem;
+  color: var(--or);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+fieldset {
+  color: var(--or);
+  border-color: var(--or);
+  border-radius: var(--bordure-ronde);
+}
+
+input[type="text"],
+textarea {
+  display:block;
+  width:100%;
+  border:none;
+  background-color: var(--transparent);
+  border-radius: var(--bordure-ronde);
+  color: var(--noir);
+}
+
+/* 🎁 Page de chargement */
+#page-chargement-application {
+  position:relative;
+  height:100vh;
+  background-image:url(illustration/pngwing.com.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:bottom center;
+  background-attachment:fixed;
+
+  text-align:center;
+  font-size:2rem;
+  font-family:'The Perfect Christmas', sans-serif;
+  font-weight:normal;
+  line-height:1.8rem;
+
+  padding:10%;
+  color: var(--or);
+  text-shadow: 2px 2px var(--noir);
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { background-color: var(--rose-pale); }
+  100% { background-color: var(--rose-fonce); }
+}
+
+.page {
+  position:relative;
+  background: var(--rose-gradient);
+  padding:5%;
+  min-height:100vh;
+  box-sizing:border-box;
+  background-image:url(illustration/bijoux.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:right bottom;
+  background-attachment:fixed;
+  color: var(--rose-fonce);
+}
+
+.page h1{
+  font-family:'Cream Cake', cursive;  /* nouvelle police */
+  text-align:center;
+  font-size:2rem;
+  font-weight:normal;
+  line-height:1.8rem;
+  color: var(--or);
+  text-shadow: 2px 2px var(--noir);
+}
+
+
+.page h2,
+.page p {
+  background-color: var(--transparent);
+  border:1px transparent solid;
+  border-radius:var(--bordure-ronde);
+  padding:0.25rem;
+}
+
+.action{
+  position:relative;
+  display:block;
+  text-decoration:none;
+  font-family:'Waving at Christmas', sans-serif;
+  background-color: var(--or);
+  color: var(--noir);
+  border:0px transparent solid;
+  border-radius: var(--bordure-ronde);
+  padding:0.25rem;
+  font-size:1rem;
+  text-align:center;
+  width:50%;
+  margin:0.25rem auto;
+  box-shadow: 2px 2px var(--ombre);
+}
+
+.action:active {
+  border:0px transparent solid;
+}
