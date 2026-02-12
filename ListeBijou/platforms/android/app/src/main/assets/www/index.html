@@ -1,0 +1,125 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+  <title>Liste des bijoux</title>
+  <link rel="stylesheet" href="decoration/application.css">
+  <style></style>
+    <script defer src="cordova.js"></script>
+  <script defer src="modele/Bijou.js"></script>
+  <script defer src="donnee/BijouDAO.js"></script>
+  <script defer src="vue/VueAjouterBijou.js"></script>
+  <script defer src="vue/VueModifierBijou.js"></script>
+  <script defer src="vue/VueBijou.js"></script>
+  <script defer src="vue/VueListeBijou.js"></script>
+  <script defer src="Application.js"></script>
+</head>
+<body>
+  <div id="page-chargement-application">Chargement de l'application bijou</div>
+
+
+  <script type="plain/text" id="html-vue-liste-bijou">
+  <div class="page">
+    <h1>Liste des bijoux</h1>
+    <a class="action" href="#ajouter-bijou">Ajouter un bijou</a>
+    <ul id="liste-bijou">
+
+      <li><div class="liste-bijou-item">
+        <a href="#bijou/{Bijou.id}" </a>
+
+        <span class="bijou-nom">{Bijou.nom}</span>
+        <a class="action" href="#modifier-bijou/{Bijou.id}">Modifier</a>
+      </div></li>
+    </ul>
+  </div>
+  </script>
+
+  <script type="plain/text" id="html-vue-ajouter-bijou">
+  <div class="page">
+    <h1>Ajouter un bijou</h1>
+    <form id="formulaire-ajouter">
+      <fieldset>
+        <legend>Identification du bijou</legend>
+        <div>
+          <label for="bijou-nom">Nom</label>
+          <input type="text" id="bijou-nom"/>
+        </div>
+        <div>
+          <label for="bijou-type">Type</label>
+          <input type="text" id="bijou-type"/>
+        </div>
+         <div>
+          <label for="bijou-prix">Prix</label>
+          <input type="text" id="bijou-prix"/>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Détails sur le bijou</legend>
+        <div>
+          <label for="bijou-description">Description</label>
+          <textarea id="bijou-description"></textarea>
+        </div>
+      </fieldset>
+      <input class="action" type="submit" id="enregistrer" value="Enregistrer"/>
+    </form>
+    <a href="#" class="action">Annuler et revenir &agrave; la liste</a>
+  </div>
+  </script>
+
+  <script type="plain/text" id="html-vue-modifier-bijou">
+    <div class="page">
+        <h1>Modifier un bijou</h1>
+        <form id="formulaire-modifier"> <fieldset>
+                <legend>Identification du bijou</legend>
+                <input type="hidden" id="bijou-id-modifie" value=""/> <div>
+                    <label for="bijou-nom-modifie">Nom</label>
+                    <input type="text" id="bijou-nom-modifie"/>
+                </div>
+                <div>
+                    <label for="bijou-type-modifie">Type</label>
+                    <input type="text" id="bijou-type-modifie"/>
+                </div>
+                 <div>
+                    <label for="bijou-prix-modifie">Prix</label>
+                    <input type="text" id="bijou-prix-modifie"/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Détails sur le bijou</legend>
+                <div>
+                    <label for="bijou-description-modifie">Description</label>
+                    <textarea id="bijou-description-modifie"></textarea>
+                </div>
+            </fieldset>
+            <input class="action" type="submit" id="enregistrer-modifie" value="Enregistrer"/>
+        </form>
+        <a href="#" class="action">Annuler et revenir &agrave; la liste</a>
+    </div>
+    </script>
+
+  <script type="plain/text" id="html-vue-bijou">
+  <div class="page">
+    <h1>Bijoux disponibles</h1>
+    <h2 id="bijou-nom"></h2>
+    <p id="bijou-type"></p>
+     <p id="bijou-prix"></p>
+    <p id="bijou-description"></p>
+    <a href="#" class="action">Revenir &agrave; la liste</a>
+  </div>
+  </script>
+</body>
+</html>
