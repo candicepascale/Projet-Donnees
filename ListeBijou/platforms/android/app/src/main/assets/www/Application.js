@@ -1,76 +1,110 @@
-class Application{
-    constructor(window, bijouDAO, vueListeBijou, vueBijou, vueAjouterBijou, vueModifierBijou) {
-        this.window = window;
-        this.bijouDAO = bijouDAO;
+class Application {
+  constructor(window, bijouDAO, vueListeBijou, vueBijou, vueAjouterBijou, vueModifierBijou) {
+    this.window = window;
+    this.bijouDAO = bijouDAO;
 
-        this.vueListeBijou = vueListeBijou;
+    this.vueListeBijou = vueListeBijou;
+    this.vueAjouterBijou = vueAjouterBijou;
+    this.vueModifierBijou = vueModifierBijou;
+    this.vueBijou = vueBijou;
 
-        this.vueAjouterBijou = vueAjouterBijou;
+    this.vueAjouterBijou.initialiserActionAjouterBijou((bijou) => this.actionAjouterBijou(bijou));
+    this.vueModifierBijou.initialiserActionModifierBijou((bijou) => this.actionModifierBijou(bijou));
 
-        this.vueAjouterBijou.initialiserActionAjouterBijou(bijou =>this.actionAjouterBijou(bijou));
-
-        this.vueModifierBijou = vueModifierBijou;
-
-        this.vueModifierBijou.initialiserActionModifierBijou(bijou =>this.actionModifierBijou(bijou));
-
-        this.vueBijou = vueBijou;
-
-        document.addEventListener('deviceready', () =>this.initialiserNavigation(), false);
-
+    document.addEventListener("deviceready", () => this.initialiserNavigation(), false);
   }
 
-  initialiserNavigation(){
+  initialiserNavigation() {
     console.log("Application-->initialiserNavigation");
-    // C'est l'équivalent de function(){this.naviguer()}
-    this.window.addEventListener("hashchange", () =>this.naviguer());
+    this.window.addEventListener("hashchange", () => this.naviguer());
 
-    setTimeout(() =>this.naviguer(), 3000);
-    //this.naviguer();
+    // ton délai de 3s, on le garde
+    setTimeout(() => this.naviguer(), 3000);
   }
 
-   naviguer(){
-        let hash = window.location.hash;
-        if(!hash){
-            this.vueListeBijou.initialiserListeBijou(this.bijouDAO.lister());
-            this.vueListeBijou.afficher();
-        }else if(hash.match(/^#ajouter-bijou/)){
-            this.vueAjouterBijou.afficher();
+  naviguer() {
+    const hash = this.window.location.hash;
 
-        }else if(hash.match(/^#modifier-bijou\/([0-9]+)/)){
-            let navigation = hash.match(/^#modifier-bijou\/([0-9]+)/);
-            let idBijou = navigation[1];
-            let bijou = this.bijouDAO.lister()[idBijou];
-            this.vueModifierBijou.initialiserBijou(bijou);
-            this.vueModifierBijou.afficher();
-        } else {
-            // Section corrigée : Vérifier si la navigation détaillée est valide
-            let navigation = hash.match(/^#bijou\/([0-9]+)/);
+    try {
+      if (!hash || hash === "#") {
+        const liste = await this.bijouDAO.lister();
+        this.vueListeBijou.initialiserListeBijou(liste);
+        this.vueListeBijou.afficher();
+        return;
+      }
 
+      if (hash.match(/^#ajouter-bijou/)) {
+        this.vueAjouterBijou.afficher();
+        return;
+      }
 
-            if (navigation) {
-                 let idBijou = navigation[1];
-                 this.vueBijou.initialiserBijou(this.bijouDAO.lister()[idBijou]);
-                 this.vueBijou.afficher();
-            } else {
-                 // Gérer les routes inconnues (par exemple, revenir à la liste)
-                 console.error("Route non reconnue : " + hash);
-                 this.window.location.hash = ""; // Rediriger vers la page d'accueil/liste
-            }
+      // ID Firestore = string => ([^/]+)
+      let matchModifier = hash.match(/^#modifier-bijou\/([^/]+)$/);
+      if (matchModifier) {
+        const idBijou = matchModifier[1];
+        const bijou = await this.bijouDAO.chercher(idBijou);
+
+        if (!bijou) {
+          console.error("Bijou introuvable pour modification, id =", idBijou);
+          this.window.location.hash = "";
+          return;
         }
-    }
 
-     actionAjouterBijou(bijou) {
-        this.bijouDAO.ajouter(bijou);
-        window.location.hash = ""; // revenir à la liste après ajout
-    }
+        this.vueModifierBijou.initialiserBijou(bijou);
+        this.vueModifierBijou.afficher();
+        return;
+      }
 
-    // 🔹 Méthode pour modifier un bijou
-    actionModifierBijou(bijouModifie) {
-        this.bijouDAO.modifier(bijouModifie);
-        window.location.hash = ""; // revenir à la liste après modification
+      let matchDetail = hash.match(/^#bijou\/([^/]+)$/);
+      if (matchDetail) {
+        const idBijou = matchDetail[1];
+        const bijou = await this.bijouDAO.chercher(idBijou);
+
+        if (!bijou) {
+          console.error("Bijou introuvable, id =", idBijou);
+          this.window.location.hash = "";
+          return;
+        }
+
+        this.vueBijou.initialiserBijou(bijou);
+        this.vueBijou.afficher();
+        return;
+      }
+
+      console.error("Route non reconnue :", hash);
+      this.window.location.hash = "";
+    } catch (err) {
+      console.error("Erreur navigation Firestore:", err);
+      this.window.location.hash = "";
     }
+  }
+
+   actionAjouterBijou(bijou) {
+    try {
+      await this.bijouDAO.ajouter(bijou);
+      this.window.location.hash = "";
+    } catch (err) {
+      console.error("Erreur ajout Firestore:", err);
+      alert("Erreur lors de l'ajout du bijou.");
+    }
+  }
+
+  actionModifierBijou(bijouModifie) {
+    try {
+      await this.bijouDAO.modifier(bijouModifie);
+      this.window.location.hash = "";
+    } catch (err) {
+      console.error("Erreur modification Firestore:", err);
+      alert("Erreur lors de la modification du bijou.");
+    }
+  }
 }
 
-new Application(window, new BijouDAO(), new VueListeBijou(), new VueBijou(), new VueAjouterBijou(), new VueModifierBijou());
-
-
+// IMPORTANT : on instancie le DAO Firestore, pas l'ancien BijouDAO localStorage
+new Application(
+  window,
+  new VueListeBijou(),
+  new VueBijou(),
+  new VueAjouterBijou(),
+  new VueModifierBijou()
+);
