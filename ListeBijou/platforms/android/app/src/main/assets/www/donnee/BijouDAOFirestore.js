@@ -36,5 +36,31 @@ class BijouDAOFirestore {
     return docRef.id;
   }
 
+  // Modifie par id Firestore
+  async modifier(bijouModifie) {
+    if (!bijouModifie.id) throw new Error("modifier(): bijou.id manquant");
 
+    await this.collection.doc(bijouModifie.id).update({
+      nom: bijouModifie.nom,
+      type: bijouModifie.type,
+      prix: bijouModifie.prix,
+      description: bijouModifie.description,
+      updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+    });
+  }
+
+  // Très utile pour VueBijou + VueModifier (chercher un bijou)
+  async chercher(id) {
+    const docSnap = await this.collection.doc(id).get();
+    if (!docSnap.exists) return null;
+
+    const data = docSnap.data();
+    return new Bijou(
+      data.nom ?? "",
+      data.type ?? "",
+      data.prix ?? "",
+      data.description ?? "",
+      docSnap.id
+    );
+  }
 }
