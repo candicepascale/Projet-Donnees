@@ -16,7 +16,7 @@ class VueModifierBijou{
 
 
 
-      afficher(){
+     afficher(){
         document.getElementsByTagName("body")[0].innerHTML = this.html;
 
         // Mettre à jour le titre
@@ -31,22 +31,22 @@ class VueModifierBijou{
 
         // Ajouter l'écouteur du formulaire
         document.getElementById("formulaire-modifier")
-                .addEventListener("submit", evenement => this.enregistrer(evenement));
+                    .addEventListener("submit", evenement => this.enregistrer(evenement));
     }
 
     enregistrer(evenement){
         evenement.preventDefault();
 
-        let id = parseInt(document.getElementById("bijou-id-modifie").value);
+        let id = document.getElementById("bijou-id-modifie").value;
         let nom = document.getElementById("bijou-nom-modifie").value;
         let type = document.getElementById("bijou-type-modifie").value;
         let prix = document.getElementById("bijou-prix-modifie").value;
         let description = document.getElementById("bijou-description-modifie").value;
 
         // Crée un objet Bijou avec l'ID et les nouvelles valeurs
-        let bijouModifie = new Bijou(nom, type, prix, description, parseInt(id));
+        let bijouModifie = new Bijou(nom, type, prix, description, id);
 
         // Appelle l'action de modification dans l'Application
         this.actionModifierBijou(bijouModifie);
-        }
+    }
 }
