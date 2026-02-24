@@ -79,7 +79,7 @@ class Application {
     }
   }
 
- async actionAjouterBijou(bijou) {
+  async actionAjouterBijou(bijou) {
     try {
       await this.bijouDAO.ajouter(bijou);
       this.window.location.hash = "";
@@ -89,7 +89,7 @@ class Application {
     }
   }
 
-   async actionModifierBijou(bijouModifie) {
+  async actionModifierBijou(bijouModifie) {
     try {
       await this.bijouDAO.modifier(bijouModifie);
       this.window.location.hash = "";
@@ -103,6 +103,7 @@ class Application {
 // IMPORTANT : on instancie le DAO Firestore, pas l'ancien BijouDAO localStorage
 new Application(
   window,
+  new BijouDAOFirestore(),
   new VueListeBijou(),
   new VueBijou(),
   new VueAjouterBijou(),
