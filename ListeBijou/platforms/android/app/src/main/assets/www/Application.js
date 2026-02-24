@@ -79,7 +79,7 @@ class Application {
     }
   }
 
- actionAjouterBijou(bijou) {
+ async actionAjouterBijou(bijou) {
     try {
       await this.bijouDAO.ajouter(bijou);
       this.window.location.hash = "";
@@ -89,7 +89,7 @@ class Application {
     }
   }
 
-   actionModifierBijou(bijouModifie) {
+   async actionModifierBijou(bijouModifie) {
     try {
       await this.bijouDAO.modifier(bijouModifie);
       this.window.location.hash = "";
