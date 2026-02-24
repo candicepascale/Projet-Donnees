@@ -22,7 +22,7 @@ class Application {
     setTimeout(() => this.naviguer(), 3000);
   }
 
-  naviguer() {
+  async naviguer() {
     const hash = this.window.location.hash;
 
     try {
@@ -79,7 +79,7 @@ class Application {
     }
   }
 
-   actionAjouterBijou(bijou) {
+ actionAjouterBijou(bijou) {
     try {
       await this.bijouDAO.ajouter(bijou);
       this.window.location.hash = "";
@@ -89,7 +89,7 @@ class Application {
     }
   }
 
-  actionModifierBijou(bijouModifie) {
+   actionModifierBijou(bijouModifie) {
     try {
       await this.bijouDAO.modifier(bijouModifie);
       this.window.location.hash = "";
